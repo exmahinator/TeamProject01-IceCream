@@ -10,6 +10,7 @@ html {
 
 a {
     text-decoration: none;
+    font-style: normal;
 }
 
 p {
@@ -22,6 +23,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-size: inherit;
     margin: 0px;
 }
 
@@ -30,4 +32,44 @@ li {
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+
+.button {
+    font: inherit;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px auto;
+
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+        @media screen and (min-width:1200px) {
+
+            max-width: 1200px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
 }
