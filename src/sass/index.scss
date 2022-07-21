@@ -1,2 +1,10 @@
 @import './common';
-@import './example';
+@import './base/basic-styles';
+@import './partials-sass/hero-header';
+@import './partials-sass/products';
+@import './partials-sass/about';
+@import './partials-sass/advantages';
+@import './partials-sass/gallery';
+@import './partials-sass/customer-review';
+@import './partials-sass/contacts';
+@import './partials-sass/footer';
