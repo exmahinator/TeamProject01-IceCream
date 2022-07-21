@@ -1,0 +1,46 @@
+<header class="header">
+    <nav class="header__nav">
+        <a class="header__link" href="/src/index.html" name="home">
+            <svg class="header__logo">
+                <use href="/src/images/compressed-svg/logo-opt.svg#logo"></use>
+            </svg>
+        </a>
+        <button class="button header__switcher" type="button" data-menu-button>
+            <svg class="header__icon" width="20" height="20">
+                <use class="header__open" href="/src/images/compressed-svg/mobile-menu.svg#open-mobile"></use>
+                <use class="header__close" href="/src/images/compressed-svg/mobile-menu.svg#close-mobile"></use>
+            </svg>
+        </button>
+        <div class="header__menu" data-menu>
+            <ul class="header__list">
+                <button class="button button-inversed header__order" type="button">Buy
+                    now<span class="header__arrow"></span></button>
+                <li class="header__mobile-item"><a class="header__anchor" href="#home">Home</a></li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#about_us">About us</a></li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#how_is">How it's made?</a></li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#products">Our products</a></li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container header__container">
+        <section class="section hero">
+            <div class="hero__box">
+                <h1 class="hero__title"><span class="hero__label">ice cream made with</span>passion</h1>
+                <button class="button button-accent hero__button" type="button">Products</button>
+                <button class="button button-inversed hero__button" type="button">How it's made?</button>
+            </div>
+            <picture>
+                <source srcset="/src/images/compressed-png/icecream-mobile-1x.png 1x,
+                                /src/images/compressed-png/icecream-mobile-2x.png 2x" media="(min-width: 320px)" />
+                <source srcset="/src/images/compressed-png/icecream-tablet-1x.png 1x,
+                                /src/images/compressed-png/icecream-tablet-2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="/src/images/compressed-png/icecream-desktop-1x.png 1x,
+                                /src/images/compressed-png/icecream-desktop-2x.png 2x" media="(min-width: 1200px)" />
+                <img class="hero__image" src="/src/images/compressed-png/icecream-mobile-1x.png"
+                    alt="waffle cone with 6 different ice cream balls" width="346" />
+            </picture>
+        </section>
+    </div>
+</header>
+<script src="/src/mobile.js"></script>
