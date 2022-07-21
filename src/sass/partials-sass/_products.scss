@@ -1,0 +1,173 @@
+.products{
+    background-color: #fff;
+    &__title{
+        font-family: var(--secondary-font);
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #D41443;
+margin-bottom: 148px;
+    }
+    &__uphead{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFA5BA;
+        margin-bottom: 15px;
+    }
+}
+.products-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+&__item{
+    border-radius: 24px;
+    padding: 160px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+    &:nth-child(1){
+        background-color: #FFB8CA;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url('/src/images/pink.png');
+            width: 280px;
+            height: 280px;
+            background-size: cover;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+            top: -140px;
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+              background-image: url('/src/images/pink@2x.png');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+                background-image: url('/src/images/pink@3x.png');
+        }
+        }
+    }
+    &:nth-child(2){
+        background-color: #F0D1A5;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url('/src/images/cocktail.png');
+            width: 280px;
+            height: 280px;
+            background-size: cover;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+            top: -140px;
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+              background-image: url('/src/images/cocktail@2x.png');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+                background-image: url('/src/images/cocktail@3x.png');
+        }
+        }
+    }
+    &:nth-child(3){
+        background-color: #C2E297;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url('/src/images/chocolate.png');
+            width: 280px;
+            height: 280px;
+            background-size: cover;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+            top: -140px;
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+              background-image: url('/src/images/chocolate@2x.png');
+          }
+          @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+                background-image: url('/src/images/chocolate@3x.png');
+        }
+        }
+    }
+}
+    &__title{
+font-family: var(--secondary-font);
+font-weight: 400;
+font-size: 20px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 34px;}
+&__decoration{
+    margin-bottom: 32px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+    }
+    &::before{
+        content: "";
+        top: 0;
+        right: -10px;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+    }
+}
+&__text{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 152%;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+margin-bottom: 32px;}
+&__button{
+    fill: #D41443;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border-color: transparent;
+}
+}
