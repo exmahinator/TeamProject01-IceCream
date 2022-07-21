@@ -1,0 +1,93 @@
+.reviews {
+    &__title {
+
+    }
+
+    &__wrapper {
+        display: none;
+        text-align: center;
+        max-width: 280px;
+        background: #FAFAFA;
+    }
+    
+    &__content {
+
+    }
+
+    &__photo {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    &__autor {
+        align-items: center;
+    }
+}
+
+.slider {
+    position: relative;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 118%;
+    width: auto;
+    margin-top: -30px;
+    padding: 5px 10px;
+    color: var(--brand-color);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    position: absolute;
+    left: -5;
+    transition: color 250ms var(--animation-function),
+                background-color 250ms var(--animation-function),
+                transform 250ms var(--animation-function);
+}
+.next {
+    position: absolute;
+    right: 0;
+
+    transition: color 250ms var(--animation-function),
+            background-color 250ms var(--animation-function),
+            transform 250ms var(--animation-function);
+}
+
+.prev:hover,
+.next:hover {
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    transform: scale(1.2);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    background: #FFFFFF;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--brand-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--accent-color);
+}
+
