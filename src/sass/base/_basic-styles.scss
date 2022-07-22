@@ -1,20 +1,20 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
-    text-decoration: none;
-    font-style: normal;
+  text-decoration: none;
+  font-style: normal;
 }
 
 p {
-    margin: 0px;
+  margin: 0px;
 }
 
 h1,
@@ -23,68 +23,81 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    margin: 0px;
+  font-size: inherit;
+  margin: 0px;
 }
 
 ul,
 li {
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
 }
 
 body {
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.04em;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
 
 .button {
-    font: inherit;
-    border: none;
-    margin: 0;
-    cursor: pointer;
-    padding: 0;
+  font: inherit;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button-accent {
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
+}
+
+.button-inversed {
+  background-color: #fff;
+  color: var(--accent-color);
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
-    max-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px auto;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px auto;
 
-    @media screen and (min-width:768px) {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-        @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
+features/reviews {
             max-width: 1200px;
             padding-left: 16px;
             padding-right: 16px;
-        }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.is-hidden {
-    color: transparent;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
