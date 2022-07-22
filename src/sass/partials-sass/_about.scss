@@ -3,10 +3,6 @@
     background-color: #FFF5F6;
     padding-bottom: 20px;
 
-    &__photo {
-        display: block;
-    }
-
     &__title {
         font-family: var(--secondary-font);
         font-weight: 400;
@@ -17,6 +13,20 @@
         color: var(--accent-color);
 
         margin-bottom: 32px;
+
+        @media screen and (min-width:768px) {
+            font-size: 48px;
+            line-height: 1.25;
+            
+            margin-bottom: 40px;
+        }
+
+            @media screen and (min-width:1200px) {
+                font-size: 58px;
+                line-height: 1.3;
+
+                margin-bottom: 60px;
+            }
     }
         &__title--element {
         font-family: var(--secondary-font);
@@ -28,12 +38,82 @@
         color: var(--brand-color);
 
         margin-bottom: 15px;
+
+            @media screen and (min-width:768px) {
+                font-size: 26px;
+                line-height: 1.1;
+            }
+
+                @media screen and (min-width:1200px) {
+                    font-size: 30px;
+                }
         }
 
         &__meta {
-            background-image: url(../images/about__bg.png);
+            background-image: url('../images/about__bg.png');
             background-repeat: no-repeat;
             background-position: left 0px top 381px;
+
+            @media screen and (min-width:768px) {
+                display: flex;
+                gap: 32px;
+
+                background-image: none;
+            }
+
+                @media screen and (min-width:1200px) {
+                    gap: 99px;
+
+                    background-image: url('../images/about__bg-desktop.png');
+                    background-position: left 0px top 0px;
+                }
+        }
+
+        &__photo--thumb {
+            display: block;
+            max-width: 280px;
+            max-height: 279px;
+
+            @media screen and (min-width:768px) {
+                max-width: 336px;
+                max-height: 335px;
+            }
+
+                @media screen and (min-width:1200px) {
+                    max-width: 501px;
+                    max-height: 501px;
+                }
+        }
+
+        &__photo {
+            display: block;
+            width: 100%;
+            height: 100%;
+            
+            @media screen and (min-width:768px) {
+                width: 336px;
+                height: 335px;
+            }
+
+                @media screen and (min-width:1200px) {
+                    width: 501px;
+                    height: 501px;
+                }
+        }
+
+        &__meta--box {
+            text-align: left;
+            @media screen and (min-width:768px) {
+                width: 334px;
+                display: flex;
+                flex-direction: column;
+            }  
+
+                @media screen and (min-width:1200px) {
+
+                    padding-top: 90px;
+                    width: 463px;
+                }
         }
 
         &__meta--title {
@@ -42,8 +122,22 @@
             font-size: 12px;
             line-height: 1.6;
             text-align: left;
-
+            letter-spacing: 0.04em;
             margin-bottom: 40px;
+
+            @media screen and (min-width:768px) {
+                max-width: 334px;
+                margin-bottom: 32px;
+                font-size: 14px;
+                line-height: 1.7;
+            }
+
+                @media screen and (min-width:1200px) {
+                    max-width: 463px;
+
+                    fons: 16px;
+                    line-height: 1.75;
+                }
         }
 
         &__description {
@@ -52,12 +146,27 @@
             font-size: 12px;
             line-height: 1.6;
             text-align: left;
+            letter-spacing: 0.04em;
             margin-bottom: 20px;
             color:var(--secondary-text-color);
+
+            @media screen and (min-width:768px) {
+                max-width: 100%;
+                font-size: 14px;
+                line-height: 1.7;
+                margin-bottom: 40px;
+            }
+
+                @media screen and (min-width:1200px) {
+                    max-width: 100%;
+                }
         }
 
         &__btn {
             display: inline-flex;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
             width: 176px;
             padding: 10px 28px;
             color: var(--accent-color);
@@ -69,6 +178,14 @@
 
             border: 1px solid transparent;
             border-radius: 22px;
+
+            @media screen and (min-width:768px) {
+                font-size: 16px;
+                line-height: 1.3;
+                
+            }
+
+                @media screen and (min-width:1200px) {}
         }
 
         &__btn:hover,
