@@ -1,6 +1,12 @@
+.gallery {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .gallery__box {
   background: linear-gradient(to top, var(--third-text-color) 80%, #fff5f6 80%);
 }
+
 .gallery__image {
   display: block;
   width: 100%;
