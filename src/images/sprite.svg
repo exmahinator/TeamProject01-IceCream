@@ -25,7 +25,9 @@
 <symbol id="arrow-next" viewBox="0 0 22 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.574 3.2l12.88 12.8-12.88 12.8"></path>
 </symbol>
-
+<symbol id="icon-right-quote" viewBox="0 0 32 32">
+<path d="M0 4v12h8c0 4.41-3.586 8-8 8v4c6.617 0 12-5.383 12-12v-12h-12zM20 4v12h8c0 4.41-3.586 8-8 8v4c6.617 0 12-5.383 12-12v-12h-12z"></path>
+</symbol>
 </defs>
 </svg>
 
