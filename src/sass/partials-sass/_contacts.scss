@@ -1,12 +1,15 @@
 .contacts {
-
     background-color: #FFF5F6;;
     &__list {
         display: flex;
         flex-direction: column;
         gap: 20px;
         margin-bottom: 32px;
-
+@media screen and (min-width:768px){
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 60px;
+}
 
     }
 
@@ -16,11 +19,22 @@
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding: 40px 32px;
+        @media screen and (min-width:768px){
+            padding: 40px 32px;
+            width: 224px;
+        }
+        @media screen and (min-width:1200px){
+            width: 368px;
+        }
     }
 }
 
 .card {
-
+@media screen and (min-width:768px){
+    width: 159px;}
+    @media screen and (min-width:1200px){
+        width: 288px;
+    }
 
     &__type {
         display: inline-flex;
@@ -36,7 +50,14 @@
         background-color: #F0D1A5;
         border: 1px solid transparent;
         border-radius: 4px;
-
+        @media screen and (min-width:768px){
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 16px;
+            line-height: 1.8;
+        }
     }
 
     &__type--foodtruck {
@@ -53,11 +74,23 @@
         background-color: #C2E297;
         border: 1px solid transparent;
         border-radius: 4px;
+        @media screen and (min-width:768px){
+            font-size: 16px;
+            line-height:  1.6;
+            margin-bottom: 32px;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 16px;
+            line-height: 1.8;
+        }
     }
 
     &__meta {
         padding-bottom: 24px;
         border-bottom: 1px solid #E1E1E1;
+        @media screen and (min-width:1200px){
+            padding-bottom: 32px;
+        }
     }
 
     &__location {
@@ -66,9 +99,18 @@
         line-height: 1.8;       
         letter-spacing: 0.04em;
 
-        margin-bottom: 8px;
+        margin-bottom: 12px;
         
         color: #000000;
+        @media screen and (min-width:768px){
+            font-size: 14px;
+            line-height:  1.6;
+            margin-bottom: 8px;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 16px;
+            line-height: 1.8;
+        }
     }
 
     &__location--description {
@@ -78,6 +120,14 @@
         
         
         color: #907E82;
+        @media screen and (min-width:768px){
+            font-size: 14px;
+            line-height:  1.6;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 16px;
+            line-height: 1.8;
+        }
     }
 
     &__openings {
@@ -85,41 +135,76 @@
         padding-bottom: 24px;
 
         border-bottom: 1px solid #E1E1E1;
+        @media screen and (min-width:768px){
+            margin-top: 32px;
+        padding-bottom: 32px;
+        }
     }
 
     &__openings--days {
         font-weight: 500;
         font-size: 12px;
-        line-height: 1.8;
+        line-height:  1.6;
         
         color: #000000;
+        @media screen and (min-width:768px){
+            font-size: 14px;
+            line-height:  1.6;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 16px;
+            line-height: 1.8;
+        }
     }
 
-    &__openings--time {
+    &__openings--time{
         font-weight: 500;
         font-size: 12px;
-        line-height: 1.8;
+        line-height:  1.6;
 
         text-transform: uppercase;
 
         margin-bottom: 8px;
 
         color: var(--brand-color);
+        @media screen and (min-width:768px){
+            font-size: 14px;
+            line-height:  1.6;
+            margin-bottom: 12px;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 16px;
+            line-height: 1.8;
+        }
+    }
+    &__openings--time:last-child{
+        margin-bottom: 0;
     }
     &__contacts {
         margin-top: 24px;
-        
+        @media screen and (min-width:768px){
+            margin-top: 32px;
+        }
     }
 
     &__contact-details {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.5;
-        
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #907E82;
+        @media screen and (min-width:768px){
+            font-size: 14px;
+            line-height:  1.6;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 16px;
+            line-height: 1.8;
+        }
     }
 
-    &__contact-details:focus {
+    &__contact-details:focus,
+    &__contact-details:hover {
         color: var(--accent-color);
         transform: scale(1.1);
     }
@@ -129,27 +214,48 @@
     display: block;
     margin-bottom: 10px;
     border-radius: 20px;
-    padding: 11px 17px;
-
+    padding: 13px 17px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
     color: var(--third-text-color);
     background-color: var(--accent-color);
 
     transition: transform 250ms var(--animation-function),
                 color 250ms var(--animation-function),
                 background-color 250ms var(--animation-function);
+                @media screen and (min-width:768px){
+                    flex-direction: row;
+                }
+                @media screen and (min-width:768px){
+                    margin-bottom: 0;
+                    margin-right: 14px;
+                    padding: 13px 34px 13px 30px;
+                }
+                @media screen and (min-width:1200px){
+                    padding: 13px 35px 13px 35px;
+                }
 }
 
 .franchise-btn {
     display: block;
     border-radius: 20px;
-    padding: 11px 17px;
-
+    padding: 13px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
     color: var(--accent-color);
     background-color: var(--third-text-color);
 
     transition: transform 250ms var(--animation-function),
                 color 250ms var(--animation-function),
                 background-color 250ms var(--animation-function);
+                @media screen and (min-width:768px){
+                    padding: 13px 37px 13px 37px;
+                }
+                @media screen and (min-width:1200px){
+                    padding: 13px 37px 13px 37px;
+                }
 }
 
 .address-btn:hover,
@@ -164,4 +270,16 @@
     color: var(--third-text-color);
     background-color: var(--accent-color);
     transform: scale(1.2);
+}
+.container-contacts{
+    padding: 140px 16px 40px 16px;
+}
+.button-box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+@media screen and (min-width:768px){
+    flex-direction: row;
+}
 }
