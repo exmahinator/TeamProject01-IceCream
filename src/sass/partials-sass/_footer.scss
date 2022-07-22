@@ -136,6 +136,7 @@
       font-size: 14px;
       line-height: 1.5;
       letter-spacing: 0.02em;
+      padding: 7px 0 4px 0;
 
     }
     &__social-sprite {
@@ -149,7 +150,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer{
     .container{
       margin: bottom 40px;
