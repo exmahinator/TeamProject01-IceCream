@@ -1,46 +1,110 @@
 <header class="header">
     <nav class="header__nav">
-        <a class="header__link" href="/src/index.html" name="home">
+        <a class="header__link" href="./index.html" name="home">
             <svg class="header__logo">
-                <use href="/src/images/compressed-svg/logo-opt.svg#logo"></use>
+                <use href="./images/sprite.svg#logo"></use>
             </svg>
         </a>
-        <button class="button header__switcher" type="button" data-menu-button>
+        <button class="button header__switcher" type="button" data-menu-button blurry-button>
             <svg class="header__icon" width="20" height="20">
-                <use class="header__open" href="/src/images/compressed-svg/mobile-menu.svg#open-mobile"></use>
-                <use class="header__close" href="/src/images/compressed-svg/mobile-menu.svg#close-mobile"></use>
+                <use class="header__open" href="./images/sprite.svg#open-mobile"></use>
+                <use class="header__close" href="./images/sprite.svg#close-mobile"></use>
             </svg>
+        </button>
+        <button class="button button-inversed header__order header__order--none" type="button">Buy
+            now<span class="header__invite">
+                <svg class="header__icon--invite">
+                    <use class="header__arrow" href="./images/sprite.svg#buy-arrow"></use>
+                </svg>
+            </span>
         </button>
         <div class="header__menu" data-menu>
             <ul class="header__list">
                 <button class="button button-inversed header__order" type="button">Buy
-                    now<span class="header__arrow"></span></button>
-                <li class="header__mobile-item"><a class="header__anchor" href="#home">Home</a></li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#about_us">About us</a></li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#how_is">How it's made?</a></li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#products">Our products</a></li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#contacts">Contacts</a></li>
+                    now<span class="header__invite">
+                        <svg class="header__icon--invite">
+                            <use class="header__arrow" href="./images/sprite.svg#buy-arrow"></use>
+                        </svg>
+                    </span></button>
+                <li class="header__mobile-item"><a class="header__anchor" href="#home"><span
+                            class="header__jump-to">Home</span></a>
+                </li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#about_us"><span
+                            class="header__jump-to">About us</span></a>
+                </li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#how_is"><span
+                            class="header__jump-to">How it's made?</span></a>
+                </li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#products"><span
+                            class="header__jump-to">Our products</span></a>
+                </li>
+                <li class="header__mobile-item"><a class="header__anchor" href="#contacts"><span
+                            class="header__jump-to">Contacts</span></a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container header__container">
-        <section class="section hero">
+        <section class="section hero" blurry>
             <div class="hero__box">
-                <h1 class="hero__title"><span class="hero__label">ice cream made with</span>passion</h1>
-                <button class="button button-accent hero__button" type="button">Products</button>
-                <button class="button button-inversed hero__button" type="button">How it's made?</button>
+                <div class="hero__main">
+                    <h1 class="hero__title"><span class="hero__label">ice cream made with</span>passion</h1>
+                    <a class="hero__anchor" href="">Products</a>
+                    <a class="hero__anchor hero__anchor--inversed" href="">How it's made?</a>
+                </div>
+                <div class="hero__hidden">
+                    <p class="hero__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                    </p>
+                    <a class="hero__link" href=""><span class="hero__explanation">
+                            <svg class="header__icon--invite">
+                                <use class="header__arrow header__arrow--inversed" href="./images/sprite.svg#buy-arrow">
+                                </use>
+                            </svg>
+                        </span></a>
+                </div>
             </div>
+            <div class="hero__blurry"></div>
             <picture>
-                <source srcset="/src/images/compressed-png/icecream-mobile-1x.png 1x,
-                                /src/images/compressed-png/icecream-mobile-2x.png 2x" media="(min-width: 320px)" />
-                <source srcset="/src/images/compressed-png/icecream-tablet-1x.png 1x,
-                                /src/images/compressed-png/icecream-tablet-2x.png 2x" media="(min-width: 768px)" />
-                <source srcset="/src/images/compressed-png/icecream-desktop-1x.png 1x,
-                                /src/images/compressed-png/icecream-desktop-2x.png 2x" media="(min-width: 1200px)" />
-                <img class="hero__image" src="/src/images/compressed-png/icecream-mobile-1x.png"
+                <source srcset="./images/icecream-desktop-1x.png 1x,
+                                ./images/icecream-desktop-2x.png 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/icecream-tablet-1x.png 1x,
+                                ./images/icecream-tablet-2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./images/icecream-mobile-1x.png 1x,
+                                ./images/icecream-mobile-2x.png 2x" media="(min-width: 320px)" />
+
+                <img class="hero__image" src="./images/icecream-mobile-1x.png"
                     alt="waffle cone with 6 different ice cream balls" width="346" />
             </picture>
+            <picture>
+                <source srcset="./images/hero-milk-1x.png 1x,
+                                ./images/hero-milk-2x.png 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/hero-milk-1x.png 1x,
+                                ./images/hero-milk-2x.png 2x" media="(min-width: 768px)" />
+                <img class="hero__milk" src="./images/hero-milk-1x.png" alt="milk in jug" width="152" />
+            </picture>
+            <picture>
+                <source srcset="./images/hero-girl-1x.png 1x,
+                                ./images/hero-girl-2x.png 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/hero-girl-1x.png 1x,
+                                ./images/hero-girl-2x.png 2x" media="(min-width: 768px)" />
+                <img class="hero__girl" src="./images/icecream-mobile-1x.png"
+                    alt="cute girl in bikini and sunglasses is eating tasty ice-cream" width="190" />
+            </picture>
+            <div class="hero__box hero__box--hidden">
+                <div class="hero__locations">
+                    <p class="hero__amount">16<span class="hero__description">cafes</span><span
+                            class="hero__circle"></span>
+                    </p>
+                    <p class="hero__amount">23
+                        <span class="hero__description hero__description--alt">food trucks</span><span
+                            class="hero__circle"></span>
+                    </p>
+                </div>
+            </div>
         </section>
     </div>
 </header>
-<script src="/src/mobile.js"></script>
+<script src="./mobile.js"></script>
+<script src="./blurry.js"></script>
