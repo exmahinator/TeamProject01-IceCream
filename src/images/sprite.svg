@@ -22,9 +22,10 @@
 <symbol id="telegram" viewBox="0 0 32 32">
 <path d="M12.612 19.671l-0.49 6.444c0.703 0 1.007-0.282 1.372-0.62l3.292-2.938 6.822 4.665c1.251 0.65 2.134 0.307 2.471-1.075l4.479-19.587c0.399-1.727-0.669-2.401-1.887-1.978l-26.323 9.407c-1.796 0.652-1.77 1.585-0.305 2.012l6.729 1.952 15.632-9.129c0.736-0.455 1.405-0.204 0.855 0.252l-12.647 10.596z"></path>
 </symbol>
-<symbol id="btn-icon" viewBox="0 0 26 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
+<symbol id="arrow-next" viewBox="0 0 22 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.574 3.2l12.88 12.8-12.88 12.8"></path>
 </symbol>
+
 </defs>
 </svg>
 
