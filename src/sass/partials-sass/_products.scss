@@ -11,7 +11,17 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #D41443;
 margin-bottom: 148px;
+@media screen and (min-width:768px){
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 158px;
     }
+    @media screen and (min-width:1200px){
+        font-size: 58px;
+        line-height: 1.15;
+        margin-bottom: 281px;
+        }
+}
     &__uphead{
         font-family: var(--secondary-font);
         font-style: normal;
@@ -22,12 +32,24 @@ margin-bottom: 148px;
         text-transform: uppercase;
         color: #FFA5BA;
         margin-bottom: 15px;
+        @media screen and (min-width:768px){
+            font-size: 26px;
+            line-height: 1.15;
     }
+    @media screen and (min-width:1200px){
+        font-size: 30px;
+        line-height: 1.15;
+        }
+ }
 }
 .products-list{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width:768px){
+    gap: 16px;
+    }
+    @media screen and (min-width:1200px){
+       gap: 32px;}
 &__item{
     border-radius: 24px;
     padding: 160px 40px 40px 40px;
@@ -36,13 +58,21 @@ margin-bottom: 148px;
     justify-content: center;
     align-items: center;
     margin-bottom: 140px;
+    @media screen and (min-width:768px){
+    width:224px;
+    padding: 118px 32px 32px 40px;
+    margin-bottom: 0;}
+    @media screen and (min-width:1200px){
+        width:368px;
+        padding: 165px 62px 62px 62px;
+        margin-bottom: 0;}
     &:nth-child(1){
         background-color: #FFB8CA;
         position: relative;
         &::before{
             content: "";
             position: absolute;
-            background-image: url('/src/images/pink.png');
+            background-image: url('../images/pink.png');
             width: 280px;
             height: 280px;
             background-size: cover;
@@ -53,22 +83,31 @@ margin-bottom: 148px;
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-              background-image: url('/src/images/pink@2x.png');
+              background-image: url('../images/pink@2x.png');
           }
           @media screen and (min-device-pixel-ratio: 3),
             screen and (min-resolution: 288dpi),
             screen and (min-resolution: 3dppx) {
-                background-image: url('/src/images/pink@3x.png');
-        }
-        }
+                background-image: url('../images/pink@3x.png');}
+        @media screen and (min-width:768px){
+            width: 224px;
+            height: 224px;
+            top: -150px;
+            }
+            @media screen and (min-width:1200px){
+                width: 368px;
+                height: 394px;
+                top: -261px;
+                }      
     }
+}
     &:nth-child(2){
         background-color: #F0D1A5;
         position: relative;
         &::before{
             content: "";
             position: absolute;
-            background-image: url('/src/images/cocktail.png');
+            background-image: url('../images/cocktail.png');
             width: 280px;
             height: 280px;
             background-size: cover;
@@ -79,13 +118,23 @@ margin-bottom: 148px;
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-              background-image: url('/src/images/cocktail@2x.png');
+              background-image: url('../images/cocktail@2x.png');
           }
           @media screen and (min-device-pixel-ratio: 3),
             screen and (min-resolution: 288dpi),
             screen and (min-resolution: 3dppx) {
-                background-image: url('/src/images/cocktail@3x.png');
+                background-image: url('../images/cocktail@3x.png');
         }
+        @media screen and (min-width:768px){
+            width: 224px;
+            height: 224px;
+            top: -150px;
+            }
+            @media screen and (min-width:1200px){
+                width: 368px;
+                height: 394px;
+                top: -261px;
+                }      
         }
     }
     &:nth-child(3){
@@ -94,7 +143,7 @@ margin-bottom: 148px;
         &::before{
             content: "";
             position: absolute;
-            background-image: url('/src/images/chocolate.png');
+            background-image: url('../images/chocolate.png');
             width: 280px;
             height: 280px;
             background-size: cover;
@@ -105,14 +154,25 @@ margin-bottom: 148px;
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-              background-image: url('/src/images/chocolate@2x.png');
+              background-image: url('../images/chocolate@2x.png');
           }
           @media screen and (min-device-pixel-ratio: 3),
             screen and (min-resolution: 288dpi),
             screen and (min-resolution: 3dppx) {
-                background-image: url('/src/images/chocolate@3x.png');
+                background-image: url('../images/chocolate@3x.png');
         }
+        @media screen and (min-width:768px){
+            width: 224px;
+            height: 224px;
+            top: -150px;
+            }
+            @media screen and (min-width:1200px){
+                width: 368px;
+                height: 394px;
+                top: -261px;
+                }      
         }
+        
     }
 }
     &__title{
@@ -124,7 +184,14 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #FFFFFF;
-margin-bottom: 34px;}
+margin-bottom: 34px;
+@media screen and (min-width:768px){
+    font-size: 20px;
+    line-height: 1.1;}
+    @media screen and (min-width:1200px){
+        font-size: 30px;
+        line-height: 1.1;
+ }}
 &__decoration{
     margin-bottom: 32px;
     width: 6px;
@@ -161,7 +228,15 @@ line-height: 152%;
 text-align: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
-margin-bottom: 32px;}
+margin-bottom: 32px;
+@media screen and (min-width:768px){
+    font-size: 14px;
+    line-height: 1.76;}
+    @media screen and (min-width:1200px){
+font-size: 16px;
+line-height: 1.76;
+ }
+}
 &__button{
     fill: #D41443;
     width: 40px;
