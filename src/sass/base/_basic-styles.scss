@@ -83,6 +83,11 @@ body {
   }
 }
 
+features/reviews {
+            max-width: 1200px;
+            padding-left: 16px;
+            padding-right: 16px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -95,3 +100,4 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
