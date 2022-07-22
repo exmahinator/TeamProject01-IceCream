@@ -63,6 +63,10 @@
             color: var(--accent-color);
             background-color: var(--third-text-color);
 
+            transition: transform 250ms var(--animation-function),
+                        color 250ms var(--animation-function),
+                        background-color 250ms var(--animation-function);
+
             border: 1px solid transparent;
             border-radius: 22px;
         }
@@ -71,6 +75,9 @@
         &__btn:focus {
             color: var(--third-text-color);
             background-color: var(--accent-color);
+            transform: scale(1.2);
+
+            
         }
 
         &__btn--icon {
