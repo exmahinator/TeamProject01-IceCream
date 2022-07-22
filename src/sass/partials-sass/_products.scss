@@ -69,6 +69,7 @@ margin-bottom: 148px;
     &:nth-child(1){
         background-color: #FFB8CA;
         position: relative;
+        max-width: 100%;
         &::before{
             content: "";
             position: absolute;
@@ -104,6 +105,7 @@ margin-bottom: 148px;
     &:nth-child(2){
         background-color: #F0D1A5;
         position: relative;
+        max-width: 100%;
         &::before{
             content: "";
             position: absolute;
@@ -140,6 +142,7 @@ margin-bottom: 148px;
     &:nth-child(3){
         background-color: #C2E297;
         position: relative;
+        max-width: 100%;
         &::before{
             content: "";
             position: absolute;
