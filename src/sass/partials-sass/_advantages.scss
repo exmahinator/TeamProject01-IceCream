@@ -57,6 +57,13 @@
 
 .advantages-list__card {
   text-align: left;
+  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    margin-top: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+  }
 }
 .advantages-list__title {
   font-size: 36px;
@@ -103,13 +110,30 @@
   }
 }
 
-.advantages-icon {
-  margin-bottom: 16px;
+.advantages-list__item::before {
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
 
+.icon-milk::before {
+  background-image: url('/src/images/milk-mobile.png');
   @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
+    background-image: url('/src/images/milk.png');
   }
 }
+
+.icon-apples::before {
+  background-image: url('/src/images/apples.png');
+}
+
+.icon-heart::before {
+  background-image: url('/src/images/heart.png');
+}
+
 .advantages-list__text {
   color: var(--primary-text-color);
   font-weight: 700;
