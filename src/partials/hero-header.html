@@ -1,17 +1,39 @@
 <header class="header">
+    <a class="visually-hidden" href="#home" name="home"></a>
     <nav class="header__nav">
-        <a class="header__link" href="./index.html" name="home">
+        <a class="header__link" href="./index.html">
             <svg class="header__logo">
                 <use href="./images/sprite.svg#logo"></use>
             </svg>
         </a>
+        <ul class="header__list header__list--desktop">
+            <li class="header__item"><a class="header__anchor header__anchor--clear" href="#home"><span
+                        class="header__jump-to header__jump-to--accent">Home</span></a>
+            </li>
+            <li class="header__item"><a class="header__anchor header__anchor--clear" href="#about"><span
+                        class="header__jump-to header__jump-to--accent">About
+                        us</span></a>
+            </li>
+            <li class="header__item"><a class="header__anchor header__anchor--clear" href="#how"><span
+                        class="header__jump-to header__jump-to--accent">How
+                        it's
+                        made?</span></a>
+            </li>
+            <li class="header__item"><a class="header__anchor header__anchor--clear" href="#products"><span
+                        class="header__jump-to header__jump-to--accent">Our
+                        products</span></a>
+            </li>
+            <li class="header__item"><a class="header__anchor header__anchor--clear" href="#contacts"><span
+                        class="header__jump-to header__jump-to--accent">Contacts</span></a>
+            </li>
+        </ul>
         <button class="button header__switcher" type="button" data-menu-button blurry-button>
             <svg class="header__icon" width="20" height="20">
                 <use class="header__open" href="./images/sprite.svg#open-mobile"></use>
                 <use class="header__close" href="./images/sprite.svg#close-mobile"></use>
             </svg>
         </button>
-        <button class="button button-inversed header__order header__order--none" type="button">Buy
+        <button class="button header__order header__order--none" type="button">Buy
             now<span class="header__invite">
                 <svg class="header__icon--invite">
                     <use class="header__arrow" href="./images/sprite.svg#buy-arrow"></use>
@@ -20,7 +42,7 @@
         </button>
         <div class="header__menu" data-menu>
             <ul class="header__list">
-                <button class="button button-inversed header__order" type="button">Buy
+                <button class="button header__order" type="button">Buy
                     now<span class="header__invite">
                         <svg class="header__icon--invite">
                             <use class="header__arrow" href="./images/sprite.svg#buy-arrow"></use>
@@ -29,11 +51,11 @@
                 <li class="header__mobile-item"><a class="header__anchor" href="#home"><span
                             class="header__jump-to">Home</span></a>
                 </li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#about_us"><span
+                <li class="header__mobile-item"><a class="header__anchor" href="#about"><span
                             class="header__jump-to">About us</span></a>
                 </li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#how_is"><span
-                            class="header__jump-to">How it's made?</span></a>
+                <li class="header__mobile-item"><a class="header__anchor" href="#how"><span class="header__jump-to">How
+                            it's made?</span></a>
                 </li>
                 <li class="header__mobile-item"><a class="header__anchor" href="#products"><span
                             class="header__jump-to">Our products</span></a>
@@ -48,9 +70,9 @@
         <section class="section hero" blurry>
             <div class="hero__box">
                 <div class="hero__main">
-                    <h1 class="hero__title"><span class="hero__label">ice cream made with</span>passion</h1>
-                    <a class="hero__anchor" href="">Products</a>
-                    <a class="hero__anchor hero__anchor--inversed" href="">How it's made?</a>
+                    <h1 class="hero__title">ice cream made with<span class="hero__label">passion</span></h1>
+                    <a class="hero__anchor" href="#products">Products</a>
+                    <a class="hero__anchor hero__anchor--inversed" href="#how">How it's made?</a>
                 </div>
                 <div class="hero__hidden">
                     <p class="hero__paragraph">
@@ -59,7 +81,7 @@
                     </p>
                     <a class="hero__link" href=""><span class="hero__explanation">
                             <svg class="header__icon--invite">
-                                <use class="header__arrow header__arrow--inversed" href="./images/sprite.svg#buy-arrow">
+                                <use class="header__arrow" href="./images/sprite.svg#buy-arrow">
                                 </use>
                             </svg>
                         </span></a>
@@ -74,22 +96,22 @@
                 <source srcset="./images/icecream-mobile-1x.png 1x,
                                 ./images/icecream-mobile-2x.png 2x" media="(min-width: 320px)" />
 
-                <img class="hero__image" src="./images/icecream-mobile-1x.png"
+                <img class="hero__icecream" src="./images/icecream-mobile-1x.png"
                     alt="waffle cone with 6 different ice cream balls" width="346" />
             </picture>
             <picture>
-                <source srcset="./images/hero-milk-1x.png 1x,
-                                ./images/hero-milk-2x.png 2x" media="(min-width: 1200px)" />
-                <source srcset="./images/hero-milk-1x.png 1x,
-                                ./images/hero-milk-2x.png 2x" media="(min-width: 768px)" />
-                <img class="hero__milk" src="./images/hero-milk-1x.png" alt="milk in jug" width="152" />
+                <source srcset="./images/milk-desktop-1x.png 1x,
+                                ./images/milk-desktop-2x.png 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/milk-tablet-1x.png 1x,
+                                ./images/milk-tablet-2x.png 2x" media="(min-width: 768px)" />
+                <img class="hero__milk" src="./images/milk-tablet-1x.png" alt="milk in jug" width="152" />
             </picture>
             <picture>
-                <source srcset="./images/hero-girl-1x.png 1x,
-                                ./images/hero-girl-2x.png 2x" media="(min-width: 1200px)" />
-                <source srcset="./images/hero-girl-1x.png 1x,
-                                ./images/hero-girl-2x.png 2x" media="(min-width: 768px)" />
-                <img class="hero__girl" src="./images/icecream-mobile-1x.png"
+                <source srcset="./images/girl-desktop-1x.png 1x,
+                                ./images/girl-desktop-2x.png 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/girl-tablet-1x.png 1x,
+                                ./images/girl-tablet-2x.png 2x" media="(min-width: 768px)" />
+                <img class="hero__girl" src="./images/girl-tablet-1x.png"
                     alt="cute girl in bikini and sunglasses is eating tasty ice-cream" width="190" />
             </picture>
             <div class="hero__box hero__box--hidden">
@@ -106,5 +128,6 @@
         </section>
     </div>
 </header>
+
 <script src="./mobile.js"></script>
 <script src="./blurry.js"></script>
