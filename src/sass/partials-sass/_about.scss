@@ -163,6 +163,7 @@
   }
 
   &__btn {
+    position: relative;
     display: inline-flex;
     gap: 15px;
     align-items: center;
@@ -217,11 +218,16 @@
     height: 100%;
     top: 55px;
     left: 0;
-    height: 520px;
+    height: 810px;
+
+    @media screen and (min-width: 768px) {
+      height: 520px;
+    }
 
     @media screen and (min-width: 1200px) {
       height: 610px;
     }
+
     pointer-events: none;
     visibility: hidden;
     z-index: 2;
@@ -263,4 +269,3 @@
     }
   }
 }
-
