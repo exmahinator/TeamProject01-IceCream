@@ -179,20 +179,20 @@
 
     border-radius: 22px;
 
-    z-index: 5;
+    z-index: 3;
 
     @media screen and (min-width: 768px) {
       font-size: 16px;
       line-height: 1.3;
     }
-  }
 
-  &__btn:hover,
-  &__btn:focus {
-    background-color: var(--hero-anchor);
-    transform: scale(1.2);
-    box-shadow: 0 2px 8px 0 var(--header-menu),
-      inset 0 0 2px 0 var(--accent-color);
+    &:hover,
+    &:focus {
+      background-color: var(--hero-anchor);
+      transform: scale(1.2);
+      box-shadow: 0 2px 8px 0 var(--header-menu),
+        inset 0 0 2px 0 var(--accent-color);
+    }
   }
 
   &__open {
@@ -218,9 +218,13 @@
     top: 55px;
     left: 0;
     height: 520px;
+
+    @media screen and (min-width: 1200px) {
+      height: 610px;
+    }
     pointer-events: none;
     visibility: hidden;
-    z-index: 4;
+    z-index: 2;
 
     background: #ffffff33;
     box-shadow: 0 8px 32px 0 var(--header-menu),
@@ -250,7 +254,7 @@
     letter-spacing: 0.04em;
     opacity: 0;
 
-    transition: opacity 400ms (var(--animation-function)) 600ms,
+    transition: opacity 400ms (var(--animation-function)) 300ms,
       color 500ms (var(--animation-function));
 
     .about__menu.about-open & {
