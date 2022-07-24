@@ -86,7 +86,30 @@ body {
   overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  color: var(--accent-color);
+  background-color: rgba(255, 165, 186, 0.5);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    animation: changeBgColor 3000ms linear infinite alternate;
+    border-radius: 10px;
+  }
 
+@keyframes changeColor {
+  0% {
+    color: rgba(198, 226, 151, 0.5);
+  }
+
+  50% {
+    color: rgba(212, 20, 67, 0.5);
+  }
+
+  100% {
+    color: #fbe9e9;
+  }
+}
 
 @keyframes changeBgColor {
   0% {
