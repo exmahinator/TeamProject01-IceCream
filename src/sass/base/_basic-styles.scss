@@ -49,16 +49,6 @@ body {
   padding: 0;
 }
 
-.button-accent {
-  background-color: var(--accent-color);
-  color: var(--third-text-color);
-}
-
-.button-inversed {
-  background-color: #fff;
-  color: var(--accent-color);
-}
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -69,6 +59,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0px auto;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
