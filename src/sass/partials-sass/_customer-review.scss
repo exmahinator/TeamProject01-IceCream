@@ -227,6 +227,7 @@
     border-radius: 50%;
     border: none;
     color: var(--third-text-color);
+    cursor: pointer;
 }
 
 .slick-dots li.slick-active button {
@@ -240,4 +241,5 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
 }
