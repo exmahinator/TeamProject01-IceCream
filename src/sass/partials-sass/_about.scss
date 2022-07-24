@@ -172,6 +172,8 @@
             color: var(--accent-color);
             background-color: var(--third-text-color);
 
+            animation: changeBgColor 3000ms linear infinite alternate;
+
             transition: transform 250ms var(--animation-function),
                         color 250ms var(--animation-function),
                         background-color 250ms var(--animation-function);
@@ -193,7 +195,7 @@
             color: var(--third-text-color);
             background-color: var(--accent-color);
             transform: scale(1.2);
-
+            animation-play-state: paused;
             
         }
 
@@ -201,3 +203,5 @@
             fill: currentColor;
         }
 }
+
+

@@ -248,6 +248,8 @@
     color: var(--accent-color);
     background-color: var(--third-text-color);
 
+    animation: changeBgColorWhite 1000ms linear infinite alternate;
+
     transition: transform 250ms var(--animation-function),
                 color 250ms var(--animation-function),
                 background-color 250ms var(--animation-function);

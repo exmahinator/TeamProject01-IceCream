@@ -94,3 +94,29 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+
+@keyframes changeBgColor {
+  0% {
+    background-color: rgba(198, 226, 151, 0.5);
+  }
+
+  50% {
+    background-color: rgba(212, 20, 67, 0.5);
+  }
+
+  100% {
+    background-color: #fbe9e9;
+  }
+}
+
+@keyframes changeBgColorWhite {
+  0% {
+    background-color: #ffffff;
+  }
+
+  100% {
+    background-color: #ffa5ba;
+  }
+}
