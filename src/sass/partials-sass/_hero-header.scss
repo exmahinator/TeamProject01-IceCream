@@ -446,12 +446,14 @@
       }
 
       transition: transform 250ms var(--animation-function),
-        box-shadow 250ms var(--animation-function);
+        box-shadow 250ms var(--animation-function),
+        background-color 250ms var(--animation-function);
 
       &:hover,
       &:focus {
         transform: scale(1.3) translate3d(7px, 0, 0);
         box-shadow: 0 7px 20px 2px var(--header-menu);
+        background-color: var(--header-anchor);
       }
     }
   }
