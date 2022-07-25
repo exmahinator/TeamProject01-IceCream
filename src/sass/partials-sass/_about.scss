@@ -2,9 +2,7 @@
   text-align: center;
   background-color: #fff5f6;
   padding-bottom: 20px;
-  &__container{
-    position: relative;
-  }
+  position: relative;
 
   &__title {
     font-family: var(--secondary-font);
@@ -31,6 +29,7 @@
       margin-bottom: 60px;
     }
   }
+
   &__title--element {
     font-family: var(--secondary-font);
     font-weight: 400;
@@ -106,6 +105,7 @@
 
   &__meta--box {
     text-align: left;
+
     @media screen and (min-width: 768px) {
       width: 334px;
       display: flex;
@@ -217,18 +217,21 @@
   &__menu {
     padding: 30px;
     position: absolute;
-    width: 100%;
-    right:0;
-    top: 0;
     height: 100%;
 
+    left: 0;
+    top: 180px;
+
+    height: 680px;
+
     @media screen and (min-width: 768px) {
-      height: 100%;
-      right: -110%;
+      top: 170px;
+      height: 410px;
     }
 
     @media screen and (min-width: 1200px) {
-      height: 100%;
+      top: 175px;
+      height: 500px;
     }
 
     pointer-events: none;
@@ -237,7 +240,7 @@
 
     background: #ffffff33;
     box-shadow: 0 8px 32px 0 var(--header-menu),
-      inset 0 0 10px 5px var(--header-menu);
+    inset 0 0 10px 5px var(--header-menu);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(6px);
 
@@ -246,7 +249,7 @@
     transform: rotate(-180deg);
 
     transition: visibility 250ms var(--animation-function),
-      transform 500ms var(--animation-function);
+    transform 500ms var(--animation-function);
 
     &.about-open {
       transform: rotate(0);
