@@ -29,7 +29,8 @@
                         class="header__jump-to header__jump-to--accent">Contacts</span></a>
             </li>
         </ul>
-        <button class="button header__switcher" type="button" data-menu-button aria-label="Open mobile and tablet menu">
+        <button class="button header__switcher" type="button" mobile-menu-button
+            aria-label="Open mobile and tablet menu">
             <svg class="header__icon" width="20" height="20">
                 <use class="header__open" href="./images/sprite.svg#open-mobile"></use>
             </svg>
@@ -114,7 +115,7 @@
     </section>
 </main>
 
-<div class="mobile" data-menu>
+<div class="mobile" mobile-menu>
     <button class="button header__order" type="button" aria-label="Buy now our awesome ice-cream" order-mobile-btn>Buy
         now<span class="header__invite">
             <svg class="header__icon--invite">
@@ -139,7 +140,7 @@
                     class="header__jump-to">Contacts</span></a>
         </li>
     </ul>
-    <button class="button mobile__switcher" type="button" data-menu-button aria-label="Close mobile and tablet menu">
+    <button class="button mobile__switcher" type="button" mobile-menu-button aria-label="Close mobile and tablet menu">
         <svg class="header__icon" width="20" height="20">
             <use class="mobile__close" href="./images/sprite.svg#close-mobile"></use>
         </svg>
@@ -157,6 +158,6 @@
     <p class="order-now__info">Order now!</p>
 </div>
 
-<script src="./mobile.js"></script>
-<script src="./order.js"></script>
-<script src="./order-mobile.js"></script>
+<script type="module" src="./mobile-menu.js"></script>
+<script type="module" src="./order.js"></script>
+<script type="module" src="./order-mobile.js"></script>
