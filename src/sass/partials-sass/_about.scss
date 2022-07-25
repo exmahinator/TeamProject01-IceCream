@@ -2,7 +2,9 @@
   text-align: center;
   background-color: #fff5f6;
   padding-bottom: 20px;
-  position: relative;
+  &__container{
+    position: relative;
+  }
 
   &__title {
     font-family: var(--secondary-font);
@@ -215,17 +217,18 @@
   &__menu {
     padding: 30px;
     position: absolute;
+    width: 100%;
+    right:0;
+    top: 0;
     height: 100%;
-    top: 55px;
-    left: 0;
-    height: 810px;
 
     @media screen and (min-width: 768px) {
-      height: 520px;
+      height: 100%;
+      right: -110%;
     }
 
     @media screen and (min-width: 1200px) {
-      height: 610px;
+      height: 100%;
     }
 
     pointer-events: none;

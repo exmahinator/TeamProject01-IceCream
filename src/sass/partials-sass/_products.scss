@@ -227,7 +227,6 @@ margin-bottom: 34px;
 &__text{
     position: relative;
 font-style: normal;
-overflow: hidden;
 font-weight: 700;
 font-size: 14px;
 line-height: 152%;
@@ -251,15 +250,7 @@ line-height: 1.76;
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
-    &.is-open-1{
-        background-color: #fff;
-    }
-    &.is-open-2{
-        background-color: #fff;
-    }
-    &.is-open-3{
-        background-color: #fff;
-    }
+    transition: all 300ms var(--animation-function);
 }
 }
 .menu-product{
@@ -270,10 +261,21 @@ line-height: 1.76;
     bottom: 0;
     transform: translateX(100%);
     transition:all 300ms linear;
+    opacity: 0;
 }
 .is-open-1{
+    height: 100%;
+    pointer-events: none;
+    box-shadow: 0 8px 32px 0 #F88CA5, inset 0 0 10px 5px #F88CA5;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 250ms var(--animation-function), all 500ms var(--animation-function);
+    background: #fff3;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
     transform: translateX(0);
-    background-color: #D41443;
+    opacity: 1;
 }
 .menu-product-2{
     position: absolute;
@@ -283,10 +285,21 @@ line-height: 1.76;
     bottom: 0;
     transform: translateX(100%);
     transition:all 300ms linear;
+    opacity: 0;
 }
 .is-open-2{
+    height: 100%;
+    pointer-events: none;
+    box-shadow: 0 8px 32px 0 #E8C086, inset 0 0 10px 5px #E8C086;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: all 250ms var(--animation-function), all 500ms var(--animation-function);
+    background: #fff3;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
     transform: translateX(0);
-    background-color: #D41443;
+    opacity: 1;
 }
 .menu-product-3{
     position: absolute;
@@ -296,8 +309,25 @@ line-height: 1.76;
     bottom: 0;
     transform: translateX(100%);
     transition:all 300ms linear;
+    opacity: 0;
 }
 .is-open-3{
+    height: 100%;
+    pointer-events: none;
+    box-shadow: 0 8px 32px 0 #ACD17B, inset 0 0 10px 5px #ACD17B;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 250ms var(--animation-function), all 500ms var(--animation-function);
+    background: #fff3;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
     transform: translateX(0);
-    background-color: #D41443;
+    opacity: 1;
+}
+.hop{
+    transform: rotate(-180deg);
+}
+.container-products{
+    overflow: hidden;
 }
