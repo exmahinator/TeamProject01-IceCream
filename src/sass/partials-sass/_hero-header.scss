@@ -815,7 +815,7 @@
     transform 250ms var(--animation-function),
     visibility 250ms var(--animation-function);
 
-  &.is-open {
+  &.mobile-is-open {
     transform: translate3d(0, 0, 0);
     opacity: 1;
     pointer-events: all;
@@ -873,7 +873,7 @@
     transition: opacity 1000ms var(--animation-function),
       transform 1000ms var(--animation-function);
 
-    .mobile.is-open & {
+    .mobile.mobile-is-open & {
       transform: rotate(180deg) scale(3);
       opacity: 1;
     }
