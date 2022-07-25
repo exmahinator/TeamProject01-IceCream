@@ -98,7 +98,7 @@
         </ul>
         <div class="button-box">
         <button type="button" class="button address-btn" data-modal-open >Our Locations ></button>
-        <button type="button" class="button franchise-btn" data-modal-open>Franchise ></button>
+        <button type="button" class="button franchise-btn" data-modal-open-1>Franchise ></button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal" >
             <button type="button" class="modal__button" data-modal-close >
@@ -107,6 +107,48 @@
                 </svg></button>
         </div>
     </div>
+    <div class="backdrop is-hidden" data-modal-1>
+        <div class="modal" >
+            <p class="modal__text">Leave your information and we'll call you back</p> 
+<form class="modal-form">
+    <label  class="modal-form__line">
+        <input type="text" name="name" class="modal-form__input">
+        <span class="modal-form__svg"><svg width="18px" height="18px">
+            <use href="./images/sprite.svg#person-black"></use>
+        </svg></span>
+        <span class="modal-form__text">Name</span>
+    </label>
+    <label  class="modal-form__line">
+        <input type="tel" name="tel" class="modal-form__input">
+        <span class="modal-form__svg"><svg width="18px" height="18px">
+            <use href="./images/sprite.svg#phone-black"></use>
+        </svg></span>
+        <span class="modal-form__text">Telephone</span>
+    </label>
+    <label class="modal-form__line">
+        <input type="email" name="email"  class="modal-form__input">
+        <span class="modal-form__svg"><svg width="18px" height="18px">
+            <use href="./images/sprite.svg#email-black"></use>
+        </svg></span>
+        <span class="modal-form__text">E-mail</span>
+    </label>
+    <label class="textarea">
+        <span class="textarea__text">Comments</span>
+        <textarea name="comment" placeholder="Enter the text" class="textarea__area"></textarea>
+    </label>
+    <label class="checkbox">
+    <input type="checkbox" name="accept" class="checkbox__input"/>
+    <span class="checkbox__icon"></span>
+    <span>I agree with the newsletter and accept the <a href="#" class="checkbox__accent">Terms and Conditions</a></span>
+    </label>            
+    <button type="submit" class="modal-form__button">Send</button>
+</form>
+        <button type="button" class="modal__button" data-modal-close-1 >
+            <svg class="modal__svg">
+            <use href="./images/sprite.svg#Vector"></use>
+            </svg></button>
+    </div>
+</div>
     </div>
 </section>
 <script src="./modal.js"></script>
