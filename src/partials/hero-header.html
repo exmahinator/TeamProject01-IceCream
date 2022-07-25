@@ -1,12 +1,12 @@
+<a class="visually-hidden" href="#home" id="home" aria-label="You are at home page"></a>
 <header class="header">
-    <a class="visually-hidden" href="#home" name="home" aria-label="You are at home page"></a>
     <nav class="header__nav">
         <a class="header__link" href="./index.html" aria-label="Our awesome logo!">
             <svg class="header__logo">
                 <use href="./images/sprite.svg#logo"></use>
             </svg>
         </a>
-        <ul class="header__list header__list--desktop">
+        <ul class="header__list">
             <li class="header__item"><a class="header__anchor header__anchor--clear" href="#home"
                     aria-label="Link to home page"><span class="header__jump-to header__jump-to--accent">Home</span></a>
             </li>
@@ -28,63 +28,33 @@
                         class="header__jump-to header__jump-to--accent">Contacts</span></a>
             </li>
         </ul>
-        <button class="button header__switcher" type="button" data-menu-button blurry-button
-            aria-label="Open mobile and tablet menu">
+        <button class="button header__switcher" type="button" data-menu-button aria-label="Open mobile and tablet menu">
             <svg class="header__icon" width="20" height="20">
                 <use class="header__open" href="./images/sprite.svg#open-mobile"></use>
-                <use class="header__close" href="./images/sprite.svg#close-mobile"></use>
             </svg>
         </button>
         <button class="button header__order header__order--none" type="button"
-            aria-label="Buy now our awesome ice-cream" order-button blurry-order-button>Buy
+            aria-label="Buy now our awesome ice-cream" order-button>Buy
             now<span class="header__invite header__invite--none">
                 <svg class="header__icon--invite">
                     <use class="header__arrow" href="./images/sprite.svg#buy-arrow"></use>
                 </svg>
             </span>
         </button>
-        <div class="order-now" order-menu>
-            <p class="order-now__info">Order now!</p>
-        </div>
-        <div class="header__menu" data-menu>
-            <button class="button header__order" type="button" aria-label="Buy now our awesome ice-cream"
-                order-mobile-btn>Buy
-                now<span class="header__invite">
-                    <svg class="header__icon--invite">
-                        <use class="header__arrow" href="./images/sprite.svg#buy-arrow"></use>
-                    </svg>
-                </span></button>
-            <ul class="header__list">
-                <li class="header__mobile-item"><a class="header__anchor" href="#home"
-                        aria-label="Link to home page"><span class="header__jump-to">Home</span></a>
-                </li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#about"
-                        aria-label="Link to about us page"><span class="header__jump-to">About us</span></a>
-                </li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#how"
-                        aria-label="Link to how it's made page"><span class="header__jump-to">How
-                            it's made?</span></a>
-                </li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#products"
-                        aria-label="Link to our products page"><span class="header__jump-to">Our products</span></a>
-                </li>
-                <li class="header__mobile-item"><a class="header__anchor" href="#contacts"
-                        aria-label="Link to our contacts page"><span class="header__jump-to">Contacts</span></a>
-                </li>
-            </ul>
-            <div class="mobile-order" order-mobile-menu>
-                <p class="order-now__info">Order now!</p>
-            </div>
-        </div>
+
     </nav>
-    <section class="section hero" blurry blurry-order>
+</header>
+
+<main>
+    <section class="section hero">
         <div class="container hero__container">
             <div class="hero__box">
                 <div class="hero__main">
                     <h1 class="hero__title">ice cream made with<span class="hero__label">passion</span></h1>
                     <a class="hero__anchor" href="#products" aria-label="Link to our products page">Products</a>
                     <a class="hero__anchor hero__anchor--inversed" href="#how"
-                        aria-label="Link to how it's made page">How it's
+                        aria-label="Link to how it's made page">How
+                        it's
                         made?</a>
                 </div>
                 <div class="hero__hidden">
@@ -103,27 +73,27 @@
             <div class="hero__blurry"></div>
             <picture>
                 <source srcset="./images/icecream-desktop-1x.png 1x,
-                                                ./images/icecream-desktop-2x.png 2x" media="(min-width: 1200px)" />
+                                                    ./images/icecream-desktop-2x.png 2x" media="(min-width: 1200px)" />
                 <source srcset="./images/icecream-tablet-1x.png 1x,
-                                                ./images/icecream-tablet-2x.png 2x" media="(min-width: 768px)" />
+                                                    ./images/icecream-tablet-2x.png 2x" media="(min-width: 768px)" />
                 <source srcset="./images/icecream-mobile-1x.png 1x,
-                                                ./images/icecream-mobile-2x.png 2x" media="(min-width: 320px)" />
+                                                    ./images/icecream-mobile-2x.png 2x" media="(min-width: 320px)" />
 
                 <img class="hero__icecream" src="./images/icecream-mobile-1x.png"
                     alt="waffle cone with 6 different ice cream balls" width="346" />
             </picture>
             <picture>
                 <source srcset="./images/milk-desktop-1x.png 1x,
-                                                ./images/milk-desktop-2x.png 2x" media="(min-width: 1200px)" />
+                                                    ./images/milk-desktop-2x.png 2x" media="(min-width: 1200px)" />
                 <source srcset="./images/milk-tablet-1x.png 1x,
-                                                ./images/milk-tablet-2x.png 2x" media="(min-width: 768px)" />
+                                                    ./images/milk-tablet-2x.png 2x" media="(min-width: 768px)" />
                 <img class="hero__milk" src="./images/milk-tablet-1x.png" alt="milk in jug" width="152" />
             </picture>
             <picture>
                 <source srcset="./images/girl-desktop-1x.png 1x,
-                                                ./images/girl-desktop-2x.png 2x" media="(min-width: 1200px)" />
+                                                    ./images/girl-desktop-2x.png 2x" media="(min-width: 1200px)" />
                 <source srcset="./images/girl-tablet-1x.png 1x,
-                                                ./images/girl-tablet-2x.png 2x" media="(min-width: 768px)" />
+                                                    ./images/girl-tablet-2x.png 2x" media="(min-width: 768px)" />
                 <img class="hero__girl" src="./images/girl-tablet-1x.png"
                     alt="cute girl in bikini and sunglasses is eating tasty ice-cream" width="190" />
             </picture>
@@ -140,10 +110,51 @@
             </div>
         </div>
     </section>
-</header>
+</main>
+
+<div class="mobile" data-menu>
+    <button class="button header__order" type="button" aria-label="Buy now our awesome ice-cream" order-mobile-btn>Buy
+        now<span class="header__invite">
+            <svg class="header__icon--invite">
+                <use class="header__arrow" href="./images/sprite.svg#buy-arrow"></use>
+            </svg>
+        </span></button>
+    <ul class="header__list--mobile">
+        <li class="mobile__item"><a class="header__anchor" href="#home" aria-label="Link to home page"><span
+                    class="header__jump-to">Home</span></a>
+        </li>
+        <li class="mobile__item"><a class="header__anchor" href="#about" aria-label="Link to about us page"><span
+                    class="header__jump-to">About us</span></a>
+        </li>
+        <li class="mobile__item"><a class="header__anchor" href="#how" aria-label="Link to how it's made page"><span
+                    class="header__jump-to">How
+                    it's made?</span></a>
+        </li>
+        <li class="mobile__item"><a class="header__anchor" href="#products" aria-label="Link to our products page"><span
+                    class="header__jump-to">Our products</span></a>
+        </li>
+        <li class="mobile__item"><a class="header__anchor" href="#contacts" aria-label="Link to our contacts page"><span
+                    class="header__jump-to">Contacts</span></a>
+        </li>
+    </ul>
+    <button class="button mobile__switcher" type="button" data-menu-button aria-label="Close mobile and tablet menu">
+        <svg class="header__icon" width="20" height="20">
+            <use class="mobile__close" href="./images/sprite.svg#close-mobile"></use>
+        </svg>
+    </button>
+    <div class="mobile__order" order-mobile-menu>
+        <p class="order-now__info">Order now!</p>
+    </div>
+</div>
+<div class="order-now" order-menu>
+    <button class="button header__order header__order--none order-now__button" type="button"
+        aria-label="Buy now our awesome ice-cream" order-button>Close me!<span
+            class="header__invite header__invite--none">
+        </span>
+    </button>
+    <p class="order-now__info">Order now!</p>
+</div>
 
 <script src="./mobile.js"></script>
 <script src="./order.js"></script>
 <script src="./order-mobile.js"></script>
-<script src="./blurry-menu.js"></script>
-<script src="./blurry-order.js"></script>
