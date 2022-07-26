@@ -5,7 +5,6 @@
   left: 0;
   width: 100vw;
   padding: 8px 20px;
-  background-color: var(--header-background-transparent);
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
@@ -19,6 +18,7 @@
   // Remove style if needed: glass background-----------------------
 
   // background: #ffffff33;
+  background-color: var(--header-background-transparent);
   box-shadow: 0 8px 32px 0 var(--header-menu),
     inset 0 0 10px 5px var(--header-menu);
   backdrop-filter: blur(6px);
@@ -220,13 +220,11 @@
     color: var(--third-text-color);
     border-radius: 20px;
 
-    transition: color 250ms var(--animation-function),
-      box-shadow 250ms var(--animation-function);
+    transition: color 250ms var(--animation-function);
 
     &:hover,
     &:focus {
       color: var(--accent-color);
-      box-shadow: inset 0 0 16px 0;
     }
 
     &--clear {

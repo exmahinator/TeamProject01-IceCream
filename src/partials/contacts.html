@@ -1,7 +1,7 @@
-<a class="visually-hidden" href="#contacts" id="contacts"></a>
+<a class="visually-hidden" href="#contacts" id="contacts" aria-label="You are at Our Croducts section"></a>
 <section class="section contacts">
     <div class="container container-contacts">
-        <h2 class="contacts__title is-hidden">contacts</h2>
+        <h2 class="contacts__title visually-hidden">Contacts</h2>
         <ul class="contacts__list">
             <li class="contacts__item">
                 <ul class="card">
@@ -29,8 +29,10 @@
                         </p>
                     </li>
                     <li class="card__contacts">
-                        <a href="tel:+610383766284 " class="card__contact-details">+61(0) 383 766 284 </a>
-                        <a href="mailto:noreply@envato.com" class="card__contact-details">noreply@envato.com</a>
+                        <a href="tel:+610383766284 " class="card__contact-details"
+                            aria-label="Chicago market phone">+61(0) 383 766 284 </a>
+                        <a href="mailto:noreply@envato.com" class="card__contact-details"
+                            aria-label="Chicago market email">noreply@envato.com</a>
                     </li>
                 </ul>
             </li>
@@ -60,8 +62,10 @@
                         </p>
                     </li>
                     <li class="card__contacts">
-                        <a href="tel:+610383766284 " class="card__contact-details">+61(0) 383 766 284 </a>
-                        <a href="mailto:noreply@envato.com" class="card__contact-details">noreply@envato.com</a>
+                        <a href="tel:+610383766284 " class="card__contact-details"
+                            aria-label="Los Angeles market phone">+61(0) 383 766 284 </a>
+                        <a href="mailto:noreply@envato.com" class="card__contact-details"
+                            aria-label="Los Angeles market phone">noreply@envato.com</a>
                     </li>
                 </ul>
             </li>
@@ -91,66 +95,73 @@
                         </p>
                     </li>
                     <li class="card__contacts">
-                        <a href="tel:+610383766284 " class="card__contact-details">+61(0) 383 766 284 </a>
-                        <a href="mailto:noreply@envato.com" class="card__contact-details">noreply@envato.com</a>
+                        <a href="tel:+610383766284 " class="card__contact-details"
+                            aria-label="New York market phone">+61(0) 383 766 284 </a>
+                        <a href="mailto:noreply@envato.com" class="card__contact-details"
+                            aria-label="New York market phone">noreply@envato.com</a>
                     </li>
                 </ul>
             </li>
         </ul>
         <div class="button-box">
-        <button type="button" class="button address-btn" data-modal-open >Our Locations ></button>
-        <button type="button" class="button franchise-btn" data-modal-open-1>Franchise ></button>
-    </div>
+            <button type="button" class="button address-btn" data-modal-open aria-label="Our locations button">Our
+                Locations ></button>
+            <button type="button" class="button franchise-btn" data-modal-open-1
+                aria-label="Our franchise button">Franchise ></button>
+        </div>
 </section>
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal-1" >
-        <iframe class="modal-1__map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d189182.54055644062!2d30.411292803215584!3d50.457867591419344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LzQvtGA0L7Qt9C40LLQvg!5e0!3m2!1suk!2sua!4v1658764980884!5m2!1suk!2sua"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <button type="button" class="modal__button" data-modal-close >
-        <svg class="modal__svg">
-        <use href="./images/sprite.svg#Vector"></use>
-        </svg></button>
-</div>
+    <div class="modal-1">
+        <iframe class="modal-1__map"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d189182.54055644062!2d30.411292803215584!3d50.457867591419344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LzQvtGA0L7Qt9C40LLQvg!5e0!3m2!1suk!2sua!4v1658764980884!5m2!1suk!2sua"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button type="button" class="modal__button" data-modal-close aria-label="Open modal window button">
+            <svg class="modal__svg">
+                <use href="./images/sprite.svg#Vector"></use>
+            </svg></button>
+    </div>
 </div>
 <div class="backdrop is-hidden" data-modal-1>
-<div class="modal" >
-    <p class="modal__text">Leave your information and we'll call you back</p> 
-<form class="modal-form">
-<label  class="modal-form__line">
-<input type="text" name="name" class="modal-form__input">
-<span class="modal-form__svg"><svg width="18px" height="18px">
-    <use href="./images/sprite.svg#person-black"></use>
-</svg></span>
-<span class="modal-form__text">Name</span>
-</label>
-<label  class="modal-form__line">
-<input type="tel" name="tel" class="modal-form__input">
-<span class="modal-form__svg"><svg width="18px" height="18px">
-    <use href="./images/sprite.svg#phone-black"></use>
-</svg></span>
-<span class="modal-form__text">Telephone</span>
-</label>
-<label class="modal-form__line">
-<input type="email" name="email"  class="modal-form__input">
-<span class="modal-form__svg"><svg width="18px" height="18px">
-    <use href="./images/sprite.svg#email-black"></use>
-</svg></span>
-<span class="modal-form__text">E-mail</span>
-</label>
-<label class="textarea">
-<span class="textarea__text">Comments</span>
-<textarea name="comment" placeholder="Enter the text" class="textarea__area"></textarea>
-</label>
-<label class="checkbox">
-<input type="checkbox" name="accept" class="checkbox__input"/>
-<span class="checkbox__icon"></span>
-<span>I agree with the newsletter and accept the <a href="#" class="checkbox__accent">Terms and Conditions</a></span>
-</label>            
-<button type="submit" class="modal-form__button">Send</button>
-</form>
-<button type="button" class="modal__button" data-modal-close-1 >
-    <svg class="modal__svg">
-    <use href="./images/sprite.svg#Vector"></use>
-    </svg></button>
-</div>
+    <div class="modal">
+        <p class="modal__text">Leave your information and we'll call you back</p>
+        <form class="modal-form">
+            <label class="modal-form__line">
+                <input type="text" name="name" class="modal-form__input">
+                <span class="modal-form__svg"><svg width="18px" height="18px">
+                        <use href="./images/sprite.svg#person-black"></use>
+                    </svg></span>
+                <span class="modal-form__text">Name</span>
+            </label>
+            <label class="modal-form__line">
+                <input type="tel" name="tel" class="modal-form__input">
+                <span class="modal-form__svg"><svg width="18px" height="18px">
+                        <use href="./images/sprite.svg#phone-black"></use>
+                    </svg></span>
+                <span class="modal-form__text">Telephone</span>
+            </label>
+            <label class="modal-form__line">
+                <input type="email" name="email" class="modal-form__input">
+                <span class="modal-form__svg"><svg width="18px" height="18px">
+                        <use href="./images/sprite.svg#email-black"></use>
+                    </svg></span>
+                <span class="modal-form__text">E-mail</span>
+            </label>
+            <label class="textarea">
+                <span class="textarea__text">Comments</span>
+                <textarea name="comment" placeholder="Enter the text" class="textarea__area"></textarea>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="accept" class="checkbox__input" />
+                <span class="checkbox__icon"></span>
+                <span>I agree with the newsletter and accept the <a href="#" class="checkbox__accent"
+                        aria-label="Terms and Conditions">Terms and Conditions</a></span>
+            </label>
+            <button type="submit" class="modal-form__button" aria-label="Submit form button">Send</button>
+        </form>
+        <button type="button" class="modal__button" data-modal-close-1 aria-label="Close modal form button">
+            <svg class="modal__svg">
+                <use href="./images/sprite.svg#Vector"></use>
+            </svg></button>
+    </div>
 </div>
 <script src="./modal.js"></script>
